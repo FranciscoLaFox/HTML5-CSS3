@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 003</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td.ArteTD1 {
+            background-color: rgb(255, 0, 0);
+        }
+
+        td.ArteTD3 {
+            background-color: rgb(140, 0, 255);
+        }
+
+        td.ArteTD6{
+            background-color: rgb(140, 0, 255);           
+        }
+
+        td.ArteTD8{
+            background-color: rgb(140, 0, 255);           
+        }
+
+        td.ArteTD4 {
+            background-color: white;
+        }
+
+        td.ArteTD11 {
+            background-color: rgb(0, 0, 255);
+        }
+
+        td.ArteTD9 {
+            background-color: rgb(0, 0, 0);
+        }
+
+        td.ArteTD10 {
+            background-color: rgb(0, 0, 0);
+        }
+
+        td.ArteTD14 {
+            background-color: rgb(255, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+
+    <h2>Normal</h2>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+
+    <h2>Mesclar com duas ou mais colunas</h2>
+
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+
+    <h2>Mesclar com duas ou mais linhas</h2>
+
+    <table>
+        <tr>
+            <td rowspan="4">A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+    <h1>Arte feita usando tabela</h1>
+    <table>
+        <tr class="ArteTR1">
+            <td rowspan="3" colspan="2" class="ArteTD1">.</td>
+            <td class="ArteTD2">.</td>
+            <td class="ArteTD3">.</td>
+            <td rowspan="6" class="ArteTD4"></td>
+        </tr>
+
+        <tr class="ArteTR2">         
+            <td class="ArteTD5">.</td>
+            <td class="ArteTD6">.</td>
+        </tr>
+
+        <tr class="ArteTR3"> 
+            <td class="ArteTD7">.</td>
+            <td class="ArteTD8"></td>
+        </tr>
+
+        <tr class="ArteTR4">
+            <td class="ArteTD9"></td>
+            <td class="ArteTD10"></td>
+            <td rowspan="3" colspan="2" class="ArteTD11"></td>
+        </tr>
+
+        <tr class="ArteTR5">         
+            <td class="ArteTD12">.</td>
+            <td class="ArteTD13">.</td>
+        </tr>
+
+        <tr class="ArteTR6">
+            <td class="ArteTD14"></td>
+            <td class="ArteTD14"></td>
+        </tr>
+    </table>
+</body>
+</html>
